@@ -19,7 +19,8 @@ Barrad is Applying a blend of different frontend architectures and methodolgies:
 
 ## Modules used
 This project builds on following setup:
-- [Grunt](http://gruntjs.com/) as our task runner
 - [Grunt](http://gruntjs.com/) as main JavaScript task runner.
 - [Assemble](http://assemble.io/) as static site generator with YAML for template data.
 - Twitter Bootstrap and Bourbon.
+- [Barbra.js](http://barbajs.org/).
+- jQuery Libraries (Animsition.js, WOW.js and other libs)
