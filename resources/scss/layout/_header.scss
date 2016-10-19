@@ -1,0 +1,132 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+//Navigation - block
+.b-navigation {
+	position:fixed;
+	display:block;
+	top:0;
+	height:$navbar-height + 10px;
+	width:100%;
+	z-index:$zindex-navbar-fixed;
+	-webkit-transition: background 0.4s ease,height 0.4s ease;
+    transition: background 0.4s ease,height 0.4s ease;
+
+	//Transparent Background - modifier on parent block (navigation)
+	&--transparent{
+		@extend .b-navigation;
+		background-color:transparent!important;
+	}
+
+	//White Background - modifier on parent block (navigation)
+	&--white{
+		@extend .b-navigation;
+		background-color:white!important;
+	}
+
+
+
+
+
+
+	//Navigation container - element
+    &__container{
+		@extend .b-navigation;
+		@extend .row; //bootstrap row - extended for markup cleanup
+		position:relative;
+		padding-left: 40px;
+		padding-right:40px;
+		margin: 0px 0px;
+		line-height: 65px;
+
+    	//modifier - for dark background
+    	&--dark{
+    		@extend .b-navigation__container;
+			background-color: axetay('navy', light);
+    	}
+
+    	//modifier - for light background
+    	&--light{
+    		@extend .b-navigation__container;
+			background-color: rgba(255, 255, 255, 0.98);
+    	}
+
+    	//modifier - for transparent background (Over Hero section)
+    	&--transparent{
+    		@extend .b-navigation__container;
+			background-color: transparent;
+    	}
+    }
+
+
+
+
+
+
+    //Logo - element
+    &__logo{
+    	display: block;
+    	position: relative;
+		line-height: $navbar-height + 10px;
+
+		//Logo Image - element
+		&img{height:40px;}
+    }
+
+	
+	//Navigation menu - element
+    &__menu{
+    	display: block;
+    	position: relative;
+    	line-height: 70px;
+
+		//Logo Image - element
+		&img{height:$navbar-height - 30px;}
+
+		//Menu Items
+		li {
+			display: inline-block;
+			list-style: none;
+			font-size: 15px;
+			margin-right: 22px;
+			vertical-align: middle;
+			padding-left: 3px;
+			font-weight: 300 !important;
+
+			&:last-child{margin-right:0px}
+		}
+    }
+
+
+    //Navigation menu - element
+    &__menu--responsive{
+    	display: block;
+    	position: relative;
+    	line-height: 70px;
+
+		//Logo Image - element
+		&img{height:$navbar-height - 30px;}
+
+		//Menu Items
+		li {
+			display: inline-block;
+			list-style: none;
+			font-size: 15px;
+			margin-right: 22px;
+			vertical-align: middle;
+			padding-left: 3px;
+			font-weight: 300 !important;
+			
+
+			&:last-child{margin-right:0px}
+
+
+		}
+    }
+
+}
+
+
+
+

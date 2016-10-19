@@ -1,0 +1,29 @@
+---
+title: <%= home.title %>
+description: Testing description
+seotags: Axetay, Limited, Consultancy, London, Software Developement, Agile
+menuLink: Home
+sortOrder: 01
+---
+
+{{#extend "lyt-default"}}
+	{{#content "main"}}
+			
+		{{#block "Home Hero"}}
+			{{> c-home-hero }}
+		{{/block}}
+
+		{{#block "Home About"}}
+			{{> c-home-about-cta }}
+		{{/block}}
+
+		{{#block "Home Contact CTA"}}
+			{{> c-home-contact-cta }}
+		{{/block}}
+
+		{{#block "Home Work CTA"}}
+			{{> c-home-work-cta }}
+		{{/block}}
+
+	{{/content}}
+{{/extend}}

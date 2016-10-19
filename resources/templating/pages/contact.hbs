@@ -1,0 +1,24 @@
+---
+title: <%= contact.seo.title %>
+description: <%= contact.seo.description %>
+menuLink: <%= contact.seo.navlink %>
+sortOrder: 07
+---
+
+{{#extend "lyt-default"}}
+	{{#content "main"}}
+
+		{{#block "Contact - Hero Block"}}
+			{{> c-contact-hero }}
+		{{/block}}
+
+		{{#block "Contact - Info Block"}}
+			{{> c-contact-info }}
+		{{/block}}
+
+		{{#block "Contact - Google Maps Block"}}
+			{{> c-contact-maps }}
+		{{/block}}
+
+	{{/content}}
+{{/extend}}

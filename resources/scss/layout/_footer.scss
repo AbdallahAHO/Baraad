@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.b-footer{
+  display:block;
+  box-sizing:border-box;
+  padding: 25px;
+  padding-top:0rem;
+  padding-bottom:1px;
+  background-color:axetay('gray', dark);
+
+  &__logo{
+    display: inline-block;
+    margin-right: 50px;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  h6{color:white;font-weight: bold;}
+
+  ul{
+    color:white;
+    li{
+      color:white;
+      a {color:white; font-weight:light;font-family: 'Open Sans';}
+    }
+  }
+
+  &__legal{    
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    opacity: 0.3;
+    margin-right: 15px;
+  }
+
+  &__address {
+    display: block;
+    color: white;
+    font-size: 13px;
+    opacity: 0.7;
+    margin-left: 0px;
+    line-height: 1.2;
+  }
+  
+}
+
+

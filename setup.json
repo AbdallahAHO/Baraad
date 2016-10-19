@@ -1,0 +1,42 @@
+{
+  "generator-veams": {
+    "projectName": "Axetay Veams Build",
+    "projectAuthor": "Abdallah Hassan",
+    "taskRunner": [
+      "grunt"
+    ],
+    "templateEngine": "assemble",
+    "installExtendedLayout": true,
+    "installPlugin": true,
+    "gulpModules": [],
+    "gruntModules": [
+      "grunt-autoprefixer",
+      "grunt-browser-sync",
+      "grunt-contrib-htmlmin",
+      "grunt-contrib-requirejs",
+      "grunt-contrib-uglify",
+      "grunt-csscomb",
+      "grunt-includes",
+      "grunt-photobox",
+      "grunt-version"
+    ],
+    "features": [
+      "createDevFolder"
+    ],
+    "jsLibs": [
+      "jquery"
+    ],
+    "cssLibs": [],
+    "testAndQA": true,
+    "testAndQALibs": [
+      "hintingHTML"
+    ],
+    "veamsPackages": [
+      "veamsMethodology"
+    ],
+    "docs": [],
+    "plugin": [
+      "assemble-contrib-sitemap"
+    ]
+  }
+}

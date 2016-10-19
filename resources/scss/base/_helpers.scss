@@ -1,0 +1,352 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+
+//  * Hide text while making it readable for screen readers
+//  * 1. Needed in WebKit-based browsers because of an implementation bug;
+//  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ 
+.hide-text {
+	overflow: hidden;
+
+	padding: 0; /* 1 */
+
+	white-space: nowrap;
+	text-indent: 101%;
+}
+
+
+//  * Hide element while making it readable for screen readers
+//  * Shamelessly borrowed from HTML5Boilerplate:
+//  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+
+.visually-hidden {
+	position: absolute;
+
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+
+	border: 0;
+}
+
+
+
+/* Overides 
+------------------------------------
+*/
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.no-overflow{
+  overflow: hidden !important;
+}
+
+.auto-overflow{
+  overflow: auto;
+}
+
+.center-margin{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.overlayer {
+  position: absolute;
+  display: block;
+  z-index: 21;
+  &.fullwidth {
+      width: 100%;
+  }
+}
+.overlayer-wrapper {
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.overlay-fixed {
+    position: fixed !important;
+    top: auto !important;
+}
+
+
+
+.top-left {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+.top-right {
+    position: absolute !important;
+    top: 1px;
+    right: 0;
+}
+.bottom-left {
+    position: absolute !important; 
+    bottom: 1px;
+    left: 0;
+}
+.bottom-right {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+}
+
+.pull-bottom{
+  position: absolute !important;
+  bottom: 0;
+}
+
+.pull-up{
+  position:absolute !important;
+  top: 0;
+}
+
+.pull-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: table;
+    z-index: 1;
+}
+
+
+
+
+
+
+//Helper rule - Div with display:table and table cell
+.h-div-table{
+  display:table;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  border-collapse:collapse;
+  table-layout: fixed;
+  height: 100%!important;
+  z-index: 1;
+}
+
+.h-div-cell{
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+.no-style{list-style-type: none!important;padding: 0;}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+
+.overlayer {
+  position: absolute;
+  display: block;
+  z-index: 21;
+  &.fullwidth {
+      width: 100%;
+  }
+}
+
+
+.pull-bottom{
+  position: absolute !important;
+  bottom: 0;
+}
+
+.pull-up{
+  position:absolute !important;
+  top: 0;
+}
+
+.pull-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: table;
+    z-index: 1;
+}
+
+.b-blank{
+  border-color:#000;
+}
+
+.v-align-bottom{
+  vertical-align: bottom !important;
+}
+.v-align-top{
+  vertical-align: top !important;
+}
+.v-align-middle{
+  vertical-align: middle !important;
+}
+
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top !important;
+}
+.col-middle {
+    vertical-align:middle !important;
+}
+.col-bottom {
+    vertical-align:bottom !important;
+}
+
+/* Generic Padding Helpers 
+------------------------------------
+*/
+
+@mixin generate-paddings-options($n, $j:0){
+  @if $j <= $n {
+    @for $i from $j through $n {
+      $step : $i*5; 
+
+      .p-t-#{$step} {
+        padding-top: ($step*1px) !important;
+      }
+      .p-r-#{$step} {
+        padding-right: ($step*1px) !important;
+      }
+       .p-l-#{$step} {
+        padding-left: ($step*1px) !important;
+      }
+       .p-b-#{$step} {
+        padding-bottom: ($step*1px) !important;
+      }
+      .padding-#{$step} {
+        padding: ($step*1px) !important;
+      }
+    }
+  }
+}
+
+@include generate-paddings-options(5);
+@include generate-paddings-options(10);
+@include generate-paddings-options(15);
+@include generate-paddings-options(20);
+@include generate-paddings-options(25);
+@include generate-paddings-options(30);
+
+
+
+/* Generic Margin Helpers
+------------------------------------
+ */
+@mixin generate-margin-options($n, $j: 0) {
+  @if $j <= $n {
+    @for $i from $j through $n {
+      $step : $i*5;  
+      .m-t-#{$step} {
+        margin-top: ($step*1px);
+      }
+      .m-r-#{$step} {
+        margin-right: ($step*1px);
+      }
+       .m-l-#{$step} {
+        margin-left: ($step*1px);
+      }
+       .m-b-#{$step} {
+        margin-bottom: ($step*1px);
+      }
+    }
+  }
+}
+
+@include generate-margin-options(5);
+@include generate-margin-options(10);
+@include generate-margin-options(15);
+@include generate-margin-options(20);
+@include generate-margin-options(25);
+@include generate-margin-options(30);
+
+
+
+
+
+
+
+/* columns of same height styles 
+------------------------------------
+*/
+.container-xs-height {
+    display:table;
+    padding-left:0px;
+    padding-right:0px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.row-xs-height {
+    display:table-row;
+}
+.col-xs-height {
+    display:table-cell;
+    float:none;
+}
+@media (min-width: 768px) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell !important;
+        float:none !important;
+    }
+}
+@media (min-width: 992px) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell !important;
+        float:none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell !important;
+        float:none !important;
+    }
+}

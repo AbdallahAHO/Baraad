@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+//@include font-face($font-opensans, $base-url + "fonts/", "opensans-regular", "opensans-regular");
+$font-paragraph: Open Sans;
+$font-header: Montserrat;
+$font-code: Anonymous Pro;
+$font-subheader: Poppins;
+//import them from google fonts through a custom mixin
+@include gwf($font-paragraph, $font-header, $font-subheader, $font-code);

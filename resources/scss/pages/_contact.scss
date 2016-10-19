@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to contact page.
+// -----------------------------------------------------------------------------
+.p-contact {
+    //Modiefier - Hero Image background
+    &--heroimgbg {
+        background: linear-gradient(rgba(57, 54, 79, 0.8), rgba(57, 54, 79, 0.9)), url('/img/contact-header.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        height: 83vh;
+        .c-hero__inner {
+            padding-top: 0px;
+        }
+    }
+    
+    //Component - Google Maps API
+    &-info {
+        display: block;
+        margin-top: -125px;
+        
+        //Block - Contact Detail Info
+        &__block {
+            display: block;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background: white;
+            min-height: 240px;
+            h2 {
+                font: 600 30px/40px "Poppins", sans-serif;
+                margin: 15px 0;
+                margin-bottom: 20px;
+                color: white;
+            }
+            h5 {
+                color: rgba(153, 124, 162, 0.62);
+                margin: 15px 0 0px;
+            }
+            p {
+                font: 400 16px/26px "Open Sans", sans-serif;
+                margin: 20px 0;
+                color: white;
+            }
+            
+            //Modifier - Phone Block
+            &--phone {
+                background: #1c3440;
+                p {
+                    margin: 0px 0;
+                }
+            }
+            
+            //Modifier - Location Block
+            &--location {
+                background: #5bbebe;
+                h2 {
+                    margin-bottom: 20px
+                }
+                p {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+                a {
+                    position: relative;
+                    display: block;
+                    font: 600 16px/26px "poppins", sans-serif;
+                    margin-top: 15px;
+                }
+            }
+            
+            //Modifier - Email Block
+            &--email {
+              background: #39364f;
+              p {
+                  margin: 0px 0;
+              }
+            }
+        }
+    }
+    
+
+    //Component - Google Maps API
+    &-map {
+        width: 100%;
+        height: 400px;
+        #axetayMap {
+            height: 100%;
+        }
+    }
+
+}

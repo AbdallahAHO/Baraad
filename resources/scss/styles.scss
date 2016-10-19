@@ -1,0 +1,98 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Official Website
+Version:	1.0
+Last change:	10/09/2016 [File Created]
+Developer:	Abdallah Hassan
+Client:	Axetay Limited LLC
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+0.  Utils and Helping libraries (Needed for Sass only)
+	0.1 Bourbon
+	0.2 Custom Mixins
+    0.3 Custom Functions
+
+1.  Vendor CSS Libraries
+	1.1 Normalizse.css
+	1.2 Bootstrap Custom Vars
+	1.3 Bootstrap
+	1.4 Font Icons
+	1.5 Animate.css (Animation Library)
+	1.6 Animsition.js (Page Loading Library)
+    1.5 Pace.js
+
+2.  Base settings
+	2.1 Bootstrap theme Overrides
+	2.2 Colour & styles Variables
+	2.3 Fonts and typography
+
+3. Layout related components
+	3.1 Header
+	3.2 Footer
+	3.3 Preloader
+
+4. Components
+    4.1 Buttons
+
+5. Pages specific styles
+    5.1 Home Page
+-------------------------------------------------------------------*/
+
+
+
+// 1. Utils and Helping libraries 
+@import
+    "utils/Bourbon/_bourbon",
+    "utils/Bourbon/_bourbon-deprecated-upcoming",
+    "utils/functions",
+    "utils/mixins";
+
+
+
+
+// 2. Vendors
+@import 
+    "base/colors",//Axetay brand colors. Must be before Bootstrap
+    "base/axetay-bootstrap-variables",//Custom Bootstrap overrides note: Default bootstrap vars are commented out
+    "vendors/bootstrap",
+    "vendors/animate",
+    "vendors/animsition";
+ 
+
+
+
+//// 3. Base stuff
+@import
+  "base/base",
+  "base/fonts",
+  "base/typography",
+  "base/helpers";
+
+
+
+// 4. Layout-related sections
+@import
+  "layout/header",
+  "layout/footer";
+
+
+
+// 5. Components
+@import
+  "components/buttons",
+  "components/hero";
+
+
+// 6. Page-specific styles
+@import
+  "pages/home",
+  "pages/contact";
+
+
+

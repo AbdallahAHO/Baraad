@@ -1,0 +1,381 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+
+//Modiefier - Hero Image background
+.p-home--heroimgbg{
+  background: linear-gradient(rgba(57, 54, 79, 0.8), rgba(57, 54, 79, 0.9)),url('https://unsplash.it/1609') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+//About section
+.p-home__about{
+  display:block;
+  box-sizing:border-box;
+  padding-top:7rem;
+  padding-bottom:6rem;
+  background-color:#fff;
+
+  &-blocks{
+  	@extend .img-responsive;
+  }
+
+  
+  .h-block-inner{
+  	text-align: left;
+  }
+
+  .h-block-inner-title{
+  	font-weight: bold;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    display: inline-block;
+    padding-bottom: 0px;
+    font-size: 14px;
+    color: #39364f;
+  }
+
+  &-content{
+  	text-align: left;
+  }
+
+}
+
+
+
+@include respond-to(xs){
+  
+  .p-home__about{
+  	padding-top: 10rem;
+  	padding-bottom: 5rem;
+
+  	&-content{
+  	  text-align: center;
+  	  padding: 40px;
+  	}
+
+  	&-blocks{
+  		padding:20px;
+  	}
+
+  	.h-block-inner{
+  		text-align: center;
+  	}
+
+  	.h-block-inner-title{
+	  font-weight: bold;
+	  margin-bottom: 58px;
+	  opacity: 0.8;
+	  display: inline-block;
+	  padding-bottom: 5px;
+	  border-bottom: 3px solid rgba(57, 54, 79, 0.9);
+	}
+
+
+  }
+
+}
+//About section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Contact section
+.p-home__contact{
+  display:block;
+  box-sizing:border-box;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  background-color:#fafafa;
+
+  &-brandlogos{
+	padding: 35px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+		
+	.brand{
+		display:inline-block;
+		vertical-align: middle;
+		padding: 15px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	img{
+		@extend .img-responsive;
+		max-height: 80px;
+		vertical-align: middle;
+		margin: 0 auto;
+	}
+  }
+
+ 
+  .h-block-inner{
+  	text-align: center;
+  }
+
+  .h-block-inner-title{
+  	font-weight: bold;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    display: inline-block;
+    padding-bottom: 0px;
+    font-size: 14px;
+    color: #39364f;
+  }
+
+	
+}
+
+
+
+
+
+
+@include respond-to(xs){
+  
+  .p-home__contact{
+  	padding-top: 5rem;
+  	padding-bottom: 5rem;
+
+	&-brandlogos{
+			
+		.brand{
+			display:inline-block;
+			vertical-align: middle;
+			padding: 30px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	}
+
+  	.h-block-inner{
+  		text-align: center;
+  	}
+
+  	.h-block-inner-title{
+  		font-weight: bold;
+  		margin-bottom: 58px;
+  		opacity: 0.8;
+  		display: inline-block;
+  		padding-bottom: 5px;
+  		border-bottom: 3px solid rgba(57, 54, 79, 0.9);
+	}
+
+  }
+
+}
+//Contact section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Work section
+.p-home__work{
+  display:block;
+  box-sizing:border-box;
+  padding: 9rem 0rem;
+
+  background: linear-gradient(rgba(57, 54, 79, 0.8), rgba(57, 54, 79, 0.9)),url('/img/home-savills.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &-blocks{
+  	@extend .img-responsive;
+  	margin-top: 10px;
+  	margin: 0 auto;
+  }
+
+  
+  .h-block-inner{
+  	text-align: left;
+    padding: 8rem 10rem;
+    background: axetay('navy', light);
+    margin-top:5px;
+  }
+
+  .h-block-inner-title{
+  	font-weight: Lighter;
+  	margin-bottom: 10px;
+  	opacity: 0.9;
+  	display: inline-block;
+  	padding-bottom: 0px;
+  	font-size: 14px;
+  	color: #ffffff;
+  }
+
+
+  &-content{
+
+  	text-align: left;
+
+  	&-header{
+  		font-weight: bold;
+  		color: white;
+  	}
+
+  	&-subheader{
+  	    margin-top: 1em;
+  	    margin-bottom: 1.5em;
+  	    font-family: 'Open Sans';
+  	    color: #fff;
+  	    font-size: 16px;
+  	}
+  
+    &-button {
+        @extend .btn;
+        @extend .btn-primary;
+        color: #ffffff!important;
+        border: 1px solid  #6e6c7e;
+        border-radius:6px;
+        padding: 9px 12px;
+        margin-top: 0px;
+        font-size: 14px;
+        font-family: 'Open Sans';
+        
+        
+        &:hover{
+          color: #ffffff !important;
+          border: 1px solid #6e6c7e;
+          border-radius: 6px;
+          padding: 9px 12px;
+        }
+    }
+  }
+}
+
+//for mobile screens
+@include respond-to(xs){
+  
+  .p-home__work{
+
+  	padding: 3rem 0rem;
+
+
+  	&-blocks{
+	    max-height: 180px;
+	    margin: 0 auto;
+  	}
+
+
+  	.h-block-inner{
+  		text-align: center;
+      padding: 4rem 0rem 0rem 0rem;
+  	}
+
+
+  	.h-block-inner-title{
+      font-weight: bold;
+      margin-bottom: 50px;
+      opacity: 1;
+      display: inline-block;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #ffffff;
+	  }
+
+
+    &-content{
+      text-align: center;
+      padding: 40px;
+
+        &-header{
+          font-weight: bold;
+          color: white;
+          font-size: 18px;
+          margin: 0.67em 0;
+        }
+
+        &-subheader{
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+            font-family: 'Open Sans';
+            color: #fff;
+            font-size: 14px;
+        }
+
+        &-button {margin-top: 15px;}
+
+    }
+
+
+  }
+}
+//Work section

@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the pages Hero section component.
+// -----------------------------------------------------------------------------
+.c-hero{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: black;
+
+  //Modiefier - Full height (vh) hero section
+  &--fullheight{
+    @extend .c-hero;
+    height: 100vh;
+  }
+
+  &--halfheight{
+    @extend .c-hero;
+    height: 65vh;
+  }
+
+  
+
+
+  //Element - Inner content of the Hero
+  &__inner{
+		position: relative;
+	  z-index: 2;
+	  display: block;
+	  height: 100%;
+    padding-top: 50px;
+  }
+
+
+
+
+  &__content{
+    text-align: center;
+ 
+    &-header{
+      font-size: 35px;
+      color: white;
+    }
+
+    &-subheader{
+      font-size: 20px;
+      font-weight: lighter;
+      color:white;
+      font-family: $font-family-sans-serif;
+    }
+
+    @include respond-to(xs){
+      
+      &-content{
+        text-align: center;
+        padding: 60px;
+      }
+
+      &-header{
+        font-size: 24px;
+      }
+
+      &-subheader{
+        font-size: 15px;
+      }
+    }
+
+  }
+  
+
+}
+
+  

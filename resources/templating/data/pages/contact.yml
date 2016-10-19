@@ -1,0 +1,31 @@
+---
+seo:
+  title: Get in Touch
+  description: Some Dummy text for SEO don't go more than a tweet char count
+  navlink: Contact
+
+
+hero:
+    header: ASK US SOMETHING. TELL US SOMETHING
+    sub-header: Some other Subheader if you wanna use it
+
+
+info:
+  phone: 
+    header: Call
+    number-primary: (+44) 574 558 5854 
+    number-fax: (+44) 123 456 7899 
+
+  location: 
+    header: Meet
+    london:    
+      address: 61 1 Stewart Street
+      postcode: E14 3EX
+      city: London
+      country: United Kingdom
+      mapsurl: https://www.google.co.uk/maps/@51.4998204,-0.00869,19z?hl=en
+
+  email: 
+    header: Write
+    general: info@axetay.co.uk 
+    work: work@axetay.co.uk 

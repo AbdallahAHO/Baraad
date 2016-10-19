@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic styles for links
+ */
+a {
+	text-decoration: none;
+}
+
+.btn,
+a {
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+	outline: none;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-focus-ring-color: none;
+}
