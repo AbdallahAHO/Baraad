@@ -1,4 +1,6 @@
 # Baraad - Scalable Frontend Boilerplate 
+
+Git Kraken Test
 This project is based on [Veams](https://github.com/Sebastian-Fitzner/Veams)
 
 Current version="0.0.1"
